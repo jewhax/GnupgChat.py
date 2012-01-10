@@ -1,0 +1,15 @@
+##########################################################
+This python program requires python-gnupg to run
+http://python-gnupg.googlecode.com/files/python-gnupg-0.2.8.tar.gz
+#########################################################
+Encrypted Comms through Gnupg Public key encryption
+Two programs will be doing all the work 
+GnupgChatSERV.py ---- upto 3 Connections . Server Decrypts Gnupg Messages Encrypted with the Users Pub.key
+GnupgChatCli.py ---- Sends Encrypted Message (doesnt get Messages Just Sends them.
+_____________________________________________
+
+Server RUNS on PORT 4443 
+Server Box Should RUN 'nc 127.0.0.1 4443' to see plain Text CHAT
+______________________________________________
+
+BETA CODE STILL UNDER DEV 
