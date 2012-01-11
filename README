@@ -1,15 +1,31 @@
-##########################################################
+sL0ps -- @sL0ps -- sL0pser [at] gmail.com
+______________________________________________
+
 This python program requires python-gnupg to run
+
 http://python-gnupg.googlecode.com/files/python-gnupg-0.2.8.tar.gz
-#########################################################
-Encrypted Comms through Gnupg Public key encryption
-Two programs will be doing all the work 
-GnupgChatSERV.py ---- upto 3 Connections . Server Decrypts Gnupg Messages Encrypted with the Users Pub.key
-GnupgChatCli.py ---- Sends Encrypted Message (doesnt get Messages Just Sends them.
+
+tar zxvf python-gnupg-0.2.8.tar.gz
+cd python-gnupg-0.2.8/
+python setup.py install
+
+
+________________________________________________________
+
+Encrypted Chat through Gnupg Public key encryption
+Two programs will be doing all the work:
+
+GnupgChatSERV.py ---- upto 3 Connections for now. Server Decrypts Gnupg Messages 
+Encrypted with the Users Pub.key and shows unencrypted text.
+When a user Connects to server he/she needs to have the servers pub.key imported 
+_________________________________________________________________
+
+GnupgChatCli.py ---- Sends Encrypted Message (doesnt get Messages Just Sends them.)
+Pub.key selected by fingerprint and hardcoded for now
 _____________________________________________
 
 Server RUNS on PORT 4443 
-Server Box Should RUN 'nc 127.0.0.1 4443' to see plain Text CHAT
+Server Box Should RUN 'nc 127.0.0.1 4443' if you want to see plain Text CHAT
 ______________________________________________
 
 BETA CODE STILL UNDER DEV 
