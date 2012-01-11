@@ -1,6 +1,6 @@
 sL0ps -- @sL0ps -- sL0pser [at] gmail.com
 ______________________________________________
-
+1.
 This python program requires python-gnupg to run
 
 http://python-gnupg.googlecode.com/files/python-gnupg-0.2.8.tar.gz
@@ -8,9 +8,31 @@ http://python-gnupg.googlecode.com/files/python-gnupg-0.2.8.tar.gz
 tar zxvf python-gnupg-0.2.8.tar.gz
 cd python-gnupg-0.2.8/
 python setup.py install
+__________________________
+2.
+Select Place where you want the GPG_FOLDER to be or use your original Folder "/home/USERNAME/.gnupg"
+UPDATE all Files that SAY "/PATH/TO/GPG/FOLDER"
+
+3.
+IN Gen_Keys.py update path, email name , Passphrase
+then run it 
+
+4. 
+RUN export Keys to get ASCII file and Create a PUB.KEY for yourself with the DATA IN IT
+Example ---------------------PUBLIC KEY -----------------------------------
+
+fjnreoifcemnroinveorinveorvrenvojerveververvreve
+evevevevevefvmefkvmekmvdokvcmslkvmcfds
+vesfdvcmkevmkejvmekjlvekj====
+-------------------------END PUB-----------------------------------------
+
+5.
+IMport Keys.py run it and SYS.argv1 is where you put the file name (importkeys.py GOOCH.pubkey)
+if GOOCH is Running SERV the run list Keys.py and put the Fingerprint i think it is in GnuChatClient.py to Select their PUB KEY and encrypt Message
+to send to them 
 
 
-________________________________________________________
+_______________________________________________________
 
 Encrypted Chat through Gnupg Public key encryption
 Two programs will be doing all the work:
